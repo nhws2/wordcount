@@ -1,0 +1,32 @@
+<center class="box"> 
+    <div id="demotext" style="font-size:100px">MY WORDCOUNT</div>
+    <br><br><br>
+    <a href="{%url 'about' %}">[ ABOUT ]</a>
+    <br><br>
+    <form action="{%url 'count' %}">
+        <textarea cols="80" rows="30" name="fulltext"></textarea>
+        <br>
+        <input type="submit" value="Count!">
+    </form>
+</center>
+
+<style>
+    body {
+        
+        background-color: rgba(192, 255, 45, 0.719);
+    }
+    .box{
+        background-color: white;
+        margin-top:100px;
+        margin-left:400px;
+        margin-right:400px;
+        padding-bottom:20px;
+        padding-top:20px;
+    }
+
+    #demotext {
+        color: #FFFFFF;
+        text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+        color: #FFFFFF;
+    }
+</style>

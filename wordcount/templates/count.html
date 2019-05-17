@@ -1,0 +1,31 @@
+<center>
+    <br><br><br><br><br><br>
+<h1>당신이 입력한 테스트는 <!--총단어수-->{{total}} 단어로 구성되어 있습니다.</h1>
+    <br><br>
+<a href="{% url 'home' %}"> [ 다시하기 ] </a>
+
+<h1>입력한 텍스트 : </h1>
+<!-- 입력받은 전체 텍스트 -->
+{{fulltext}}
+
+<h1>단어 카운트 : </h1>
+<!-- '단어' - '단어나온 횟수' -->
+{%for word, countTotal in dictionary %}
+{{ word }} - {{ countTotal }}
+<br>
+{% endfor %}
+
+<style>
+        body{
+            margin: 0px;
+            background-color:  rgba(192, 255, 45, 0.719);
+        }
+    </style>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Jua&display=swap');
+    body{
+     font-family: 'Jua', sans-serif;
+    }
+</style>
+</center>
